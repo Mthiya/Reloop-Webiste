@@ -1,0 +1,49 @@
+/* styles.css */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Tab button shared styling */
+.tab-button {
+  transition: all 0.3s ease;
+}
+
+/* Active tab style */
+.tab-button.active {
+  border-bottom: 4px solid #0a66c2 !important;
+  color: #0a66c2 !important;
+}
+
+/* Input focus styling */
+input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(10, 102, 194, 0.3); /* subtle blue glow */
+}
+
+/* Smooth fade-in animation */
+.form-container {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Link back to home styling */
+.home-link {
+  color: #0a66c2;
+  transition: color 0.3s;
+}
+
+.home-link:hover {
+  text-decoration: underline;
+  color: #084b9d;
+}
